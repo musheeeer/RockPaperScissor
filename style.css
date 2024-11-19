@@ -4,19 +4,19 @@
     text-align: center;
 }
 
-.body {
+body {
     background-image: 
         linear-gradient(
             to right,
-            red,
-            #f06d06,
-            rgb(255, 255, 0),
-            green
+            rgb(192, 202, 173),
+            #F9DBBD,
+            #CEC075,
+            #9DA9A0
         );
 }
 
 h1 {
-    background-color: black;
+    background-color:#0D1B1E;
     color: beige;
     height: 5rem;
     line-height: 5rem;
@@ -34,7 +34,7 @@ h1 {
 
 .choice:hover {
     cursor: pointer;
-    background-color: black;
+    background-color: #0D1B1E;
 }
 
 img {
@@ -67,7 +67,7 @@ img {
     margin-top: 4rem;
 }
 #msg {
-    background-color: black;
+    background-color: #0D1B1E;
     color: aliceblue;
     font-size: 2rem;
     display: inline;
