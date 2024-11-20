@@ -68,7 +68,7 @@ img {
 }
 #msg {
     background-color: #0D1B1E;
-    color: aliceblue;
+    color: beige;
     font-size: 2rem;
     display: inline;
     padding: 1rem;
@@ -79,4 +79,9 @@ img {
     display: inline;
     margin-top: 2rem;
     padding: 2px;
+    background-color: beige;
+}
+
+#resetB:hover {
+    cursor: pointer;
 }
