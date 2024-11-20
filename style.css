@@ -34,7 +34,15 @@ h1 {
 
 .choice:hover {
     cursor: pointer;
-    background-color: #0D1B1E;
+}
+#rock:hover {
+    background-color: #fe2cf1;
+}
+#paper:hover {
+    background-color: #01dfba;
+}
+#scissor:hover {
+    background-color: #0c7cea;
 }
 
 img {
