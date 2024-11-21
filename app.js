@@ -14,24 +14,24 @@ const genCompChoice = () => {
 };
 
 const drawGame = () => {
-    dispMsg.innerText = "It is a draw";
-    dispMsg.style.backgroundColor = "black";
+    dispMsg.innerText = "Err...it is a draw";
+    dispMsg.style.backgroundColor = "#0D1B1E";
 };
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin){
         uScore++;
         userScoreP.innerText = uScore;
-        dispMsg.innerText = "You win !";
-        dispMsg.style.backgroundColor = "#0EA05E";
+        dispMsg.innerHTML = `Your choice is ${userChoice} & Computer choice is ${compChoice}<br>You WIN`;
+        dispMsg.style.backgroundColor = "rgba(14, 160, 94, 0.7)";
     } else {
         cScore++;
         compScoreP.innerText = cScore;
-        dispMsg.innerText = "You lose !";
-        dispMsg.style.backgroundColor = "#D20103";
+        dispMsg.innerHTML =  `Your choice is ${userChoice} & Computer choice is ${compChoice}<br>You LOST`;
+        dispMsg.style.backgroundColor = "rgba(210, 1, 3, 0.85)";
 
     }
-}
+};
 
 const playGame = (userChoice) => {
     console.log("user choice is", userChoice);
@@ -54,7 +54,7 @@ const playGame = (userChoice) => {
             //rock and paper
             userWin = compChoice === "rock" ? false : true;
         }
-        showWinner(userWin);
+        showWinner(userWin, userChoice, compChoice);
     }
 
 };
@@ -73,4 +73,4 @@ resetB.addEventListener("click", () =>{
     compScoreP.innerText = cScore;
     dispMsg.innerText = "Let's play!";
     dispMsg.style.backgroundColor = "black";
-})
+});

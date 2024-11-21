@@ -20,6 +20,7 @@ h1 {
     color: beige;
     height: 5rem;
     line-height: 5rem;
+    pointer-events: none;
 }
 
 .choice {
@@ -74,13 +75,17 @@ img {
 .msgContainer {
     margin-top: 4rem;
 }
+
 #msg {
     background-color: #0D1B1E;
     color: beige;
     font-size: 2rem;
-    display: inline;
+    display: inline-block;
     padding: 1rem;
-    border-radius: 5%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 
 #resetB {
